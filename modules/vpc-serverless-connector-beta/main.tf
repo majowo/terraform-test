@@ -34,5 +34,6 @@ resource "google_vpc_access_connector" "connector_beta" {
   machine_type   = each.value.machine_type
   min_instances  = each.value.min_instances
   max_instances  = each.value.max_instances
+  min_throughput = each.value.min_throughput
   max_throughput = each.value.max_throughput
 }
